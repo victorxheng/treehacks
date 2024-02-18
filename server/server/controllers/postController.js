@@ -1,0 +1,1 @@
+Manages creating, retrieving, updating, and deleting blog posts.

@@ -1,0 +1,1 @@
+Defines the blog post schema for the database.

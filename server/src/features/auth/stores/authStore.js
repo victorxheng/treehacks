@@ -1,0 +1,1 @@
+State store for authentication information.

@@ -1,0 +1,1 @@
+Routes related to authentication (login, logout, sign up).

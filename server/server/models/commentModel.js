@@ -1,0 +1,1 @@
+Defines the comment schema for the database.

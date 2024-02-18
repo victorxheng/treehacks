@@ -1,0 +1,1 @@
+Handles user authentication, sign up, and login logic.

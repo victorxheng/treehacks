@@ -1,0 +1,1 @@
+Component to render user posts from the database.

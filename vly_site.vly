@@ -1,0 +1,66 @@
+"""
+vly.ai website
+
+[DESCRIPTION] (requires description of the company and the purpose of the site)
+
+Company information:
+vly ai is a company that uses artificial intelligence to generate full-stack web saas applications. They believe in making software development fast and affordable and enables rapid software development for 100x lower costs.
+
+Website Description:
+This website is a basic marketing site for vly.ai, where it advertises a landing page for the user showcasing its features and vision, as well as a full authentication system that allows the user to sign up or log in, write blogs, and read blogs as well. The purpose of this is to allow for the generation of content and the improvement of search engine optimization.
+
+[FEATURES] (requires breakdown of each feature on the site specifically)
+The website features the following user flow:
+Landing page that describes vly ai and its mission, as well as the ability to read blogs that are already written
+The ability for the user to sign up or log in
+Redirecting back to the landing page, where the user’s blog drafts and published blogs appear at the top and where the user can click on a button to write a new blog
+The user then can create a new blog, taking them to a writing interface in markdown language
+While writing, the text automatically saves to the data base, and the user can publish the article, as well as read the article or other user written articles on a reading page
+The user can edit their published article through the same writing interface
+The user can view their published articles and drafted articles on the home page when logged in, and click on them to edit them
+When choosing what blogs to show the user, there is a list of most recent, and a list of most viewed
+
+[DATA STRUCTURES] (requires database schema that covers the features and purpose)
+blog: title (str), content (str), image (img), views (int), author (user)
+user: email (str), password (str), name, list of blogs
+
+
+[PAGES] (requires page breakdown and description that covers the features, purpose, and data structure)
+
+Home (root): Main landing page where the user can view the company information, details, vision, marketing, and more. The user can also read most recent blog articles and most viewed articles written by other users. When logged in, the user can view their drafted blogs as well as published blogs, and click on them to edit them.
+Auth: The authentication page, where the user can log in or sign up. Logging in requires just an email and password, while signing up requires an email and password confirmation.
+Write (blog id): The page where the user can write and edit their blog articles. The blog articles save to the database after the user clicks off and if the value of the text is different. The blog articles can then be published, deleted, or viewed for the reading page. The blog id is the database id of the blog article. The user must be verified to be the author in order to edit, save, publish, etc.
+Read (blog id): The page where the user can read blog articles. If the user is the author, they can also press a edit button that appears. At the bottom, recommended articles include most recent as well as top viewed articles.
+
+[SHARED UI COMPONENTS] (requires breakdown of re-usable ui components shared across pages)
+Nav Bar: When logged out, it contains a discord link to the discord server, and when logged in, it contains the discord link,
+log out link, and share link.
+Suggested Blogs: Shows two lists, one containing a series of top blogs rendered on the list, the other displaying the latest blogs
+
+
+[PAGE: home]
+States:
+Events:
+
+UI:
+Nav Bar
+Hero {
+    Hidden when the user is logged in
+    Title displays "Create a full stack web app in 1 click" and the subtitle displays "Ship 100x faster and cheaper"
+    Call to action adds their email to a waitlist and the button says "Join"
+}
+Features {
+    Title displays: "Production Ready SaaS Software", and describes the features, including the ability to ship faster, cheaper, with SaaS specific integrations and expanding component libraries
+}
+Suggested Blogs
+
+[PAGE: auth]
+
+
+[PAGE: write/[id]]
+
+
+[PAGE: read/[id]]
+
+
+"""

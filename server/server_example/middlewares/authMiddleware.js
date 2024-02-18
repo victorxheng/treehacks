@@ -1,0 +1,1 @@
+Middleware for checking user authentication and permissions.

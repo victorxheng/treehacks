@@ -1,0 +1,31 @@
+{
+    "server": {
+      "controllers": {
+        "authController.js": "Handles user authentication, sign up, and login logic.",
+        "postController.js": "Manages creating, retrieving, updating, and deleting blog posts.",
+        "commentController.js": "Manages operations related to comments on posts."
+      },
+      "middlewares": {
+        "authMiddleware.js": "Middleware for checking user authentication and permissions."
+      },
+      "models": {
+        "userModel.js": "Defines the user schema for the database.",
+        "postModel.js": "Defines the blog post schema for the database.",
+        "commentModel.js": "Defines the comment schema for the database."
+      },
+      "routes": {
+        "authRoutes.js": "Routes related to authentication (login, logout, sign up).",
+        "postRoutes.js": "Routes for blog post operations (CRUD operations).",
+        "commentRoutes.js": "Routes for managing comments on blog posts."
+      },
+      "services": {
+        "authService.js": "Business logic for authentication, such as password hashing and verification.",
+        "postService.js": "Business logic for post management.",
+        "commentService.js": "Business logic for comment management."
+      },
+      "utils": {
+        "database.js": "Utility for database connection and management."
+      }
+    }
+  }
+  

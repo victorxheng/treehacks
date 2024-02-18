@@ -1,0 +1,1 @@
+Main routing configuration file that includes both public and protected routes.

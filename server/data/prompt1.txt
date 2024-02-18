@@ -1,0 +1,52 @@
+Given a blogging website project with the following requirements and structure:
+
+1. Server Requirements:
+- The server contains APIs that can be used to access information from the database and different tables in the database.
+- It should allow user authentication, retrieval of comments, and posts.
+
+2. Frontend Requirements:
+- The root route should render regardless of whether the user has signed in and include:
+  a. A sign-in button that redirects to the auth page if not signed in.
+  b. Components to render user posts and comments from the database.
+- The auth route should include username and password_hash inputs and a submit button for authentication.
+
+And the following project structure:
+
+{
+  "src": {
+    "assets": {},
+    "components": {},
+    "config": {},
+    "features": {
+      "awesome-feature": {
+        "api": {},
+        "assets": {},
+        "components": {},
+        "hooks": {},
+        "routes": {},
+        "stores": {},
+        "types": {},
+        "utils": {},
+        "index.ts": "// Export the public API of the awesome-feature\n"
+      }
+    },
+    "hooks": {},
+    "lib": {},
+    "providers": {},
+    "routes": {},
+    "stores": {},
+    "test": {},
+    "types": {},
+    "utils": {}
+  },
+  "server": {
+    "controllers": {},
+    "middlewares": {},
+    "models": {},
+    "routes": {},
+    "services": {},
+    "utils": {}
+  }
+}
+
+Based on this information, provide a detailed breakdown of the files that should be created for both the server-side and frontend components of this project, including descriptions of their roles and functionalities.

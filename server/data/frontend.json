@@ -1,0 +1,36 @@
+{
+    "src": {
+      "components": {
+        "SignInButton.js": "The sign-in button component that redirects to the auth page on press.",
+        "PostList.js": "Component to render user posts from the database.",
+        "CommentList.js": "Component to render comments under the posts."
+      },
+      "features": {
+        "auth": {
+          "api": {
+            "authAPI.js": "Functions to call the backend authentication API."
+          },
+          "components": {
+            "LoginForm.js": "Form component for login.",
+            "SignUpForm.js": "Form component for sign up."
+          },
+          "hooks": {
+            "useAuth.js": "Hook for managing authentication state."
+          },
+          "routes": {
+            "AuthRoutes.js": "Routing configuration for authentication pages."
+          },
+          "stores": {
+            "authStore.js": "State store for authentication information."
+          }
+        }
+      },
+      "routes": {
+        "AppRoutes.js": "Main routing configuration file that includes both public and protected routes."
+      },
+      "providers": {
+        "AuthProvider.js": "Context provider for authentication state across the app."
+      }
+    }
+}
+  

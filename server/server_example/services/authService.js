@@ -1,0 +1,1 @@
+Business logic for authentication, such as password hashing and verification.

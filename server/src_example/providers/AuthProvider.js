@@ -1,0 +1,1 @@
+Context provider for authentication state across the app.

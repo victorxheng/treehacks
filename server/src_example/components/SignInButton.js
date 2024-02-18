@@ -1,0 +1,1 @@
+The sign-in button component that redirects to the auth page on press.

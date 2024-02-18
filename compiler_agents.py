@@ -24,14 +24,12 @@ response = client.chat.completions.create(
   model="gpt-4-0125-preview",
   messages=[
     {"role": "system", "content": "You are a helpful assistant."},
-    {"role": "user", "content": "Who won the world series in 2020?"},
+    {"role": "user", "content": prompt.split('[PAGES]')[0]},
   ]
 )
 
 # edit the db_model.py file from the path with the response
 
-
-# agent starts by writing the database schema
 
 # replace and then start writing the stack
 
